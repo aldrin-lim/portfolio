@@ -1,0 +1,77 @@
+html, body {
+  height: 100%;
+  background-image: linear-gradient(to right top, #0f0f0f, #111111, #131313, #141414, #161616);
+  font-family: 'Raleway', sans-serif; }
+  html > div, body > div {
+    padding: 1em; }
+
+#highlight {
+  color: #7f0c00 !important; }
+
+#first_section {
+  height: 90vh; }
+  #first_section .nav {
+    display: flex; }
+    #first_section .nav #logo {
+      flex: 4; }
+      #first_section .nav #logo img {
+        margin: 10px;
+        width: 100px;
+        height: 100px; }
+    #first_section .nav #menu {
+      flex: 1;
+      display: flex; }
+      #first_section .nav #menu a {
+        color: #ddd;
+        flex: 1;
+        margin: auto; }
+  #first_section #header {
+    font-family: 'Anton', sans-serif; }
+    #first_section #header #typewritter {
+      color: #ddd; }
+      #first_section #header #typewritter .type_intro {
+        width: 60%;
+        margin: auto;
+        font-size: 4em;
+        margin-top: 2em;
+        text-align: center;
+        text-align-last: center; }
+      #first_section #header #typewritter #type_description {
+        font-size: 1.5em; }
+      #first_section #header #typewritter .seemycv {
+        text-align: center;
+        width: 100%;
+        margin-top: 2em;
+        transition: opacity 500ms ease-out;
+        opacity: 0; }
+        #first_section #header #typewritter .seemycv.show {
+          opacity: 1; }
+        #first_section #header #typewritter .seemycv a {
+          width: 20%;
+          display: inline-block;
+          border-radius: 1em;
+          border: solid 2px #7f0c00;
+          color: #7f0c00;
+          font-weight: 500;
+          padding: 1em;
+          -webkit-transition: 300ms;
+          /* Safari */
+          -webkit-transition-timing-function: ease-in-out;
+          /* Safari */ }
+          #first_section #header #typewritter .seemycv a:hover {
+            text-decoration: none;
+            color: #ddd;
+            border-color: #ddd;
+            -webkit-transition: 300ms;
+            /* Safari */
+            -webkit-transition-timing-function: ease-in-out;
+            /* Safari */ }
+    #first_section #header #avatar {
+      width: 100%;
+      display: flex; }
+      #first_section #header #avatar img {
+        margin: auto;
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+        padding: 1%; }
