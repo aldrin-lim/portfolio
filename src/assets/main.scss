@@ -1,0 +1,104 @@
+$text: #ddd;
+$hightlight: #7f0c00;
+$main: #191919;
+html, body,{
+  height: 100%;
+  background-image: linear-gradient(to right top, #0f0f0f, #111111, #131313, #141414, #161616);
+  font-family: 'Raleway', sans-serif;
+  &>div {
+    padding: 1em;
+  }
+}
+
+#highlight {
+  color: $hightlight !important
+}
+
+#first_section{
+  // display: flex;
+  height: 90vh;
+  
+  .nav {
+    display: flex;
+    #logo {
+      flex: 4;
+      img {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+      }
+    }
+    #menu {
+      flex: 1;
+      display: flex;
+      a {
+        color: $text;
+        flex: 1;
+        margin: auto;
+      }
+    }
+  }
+  #header {
+    font-family: 'Anton', sans-serif;
+    #typewritter {
+      color: $text;
+      .type_intro {
+        width: 60%;
+        margin: auto;
+        font-size: 4em;
+        margin-top: 2em;
+        text-align: center;
+        text-align-last: center;
+        // text-justify: 
+      }
+      #type_description {
+        font-size: 1.5em;
+      }
+      .seemycv {
+        text-align: center;
+        width: 100%;
+        margin-top: 2em;
+        transition: opacity 500ms ease-out;
+        opacity: 0;
+        &.show{
+          opacity: 1;
+        }
+        a {
+          width: 20%;
+          display: inline-block;
+          border-radius: 1em;
+          // background-color: $hightlight;
+          border: solid 2px $hightlight;
+          // color: $main;
+          color: $hightlight;
+          // font-family: 'Raleway', sans-serif;
+          font-weight: 500;
+          padding: 1em;
+          -webkit-transition: 300ms; /* Safari */
+          -webkit-transition-timing-function: ease-in-out; /* Safari */
+          &:hover {
+            text-decoration: none;
+            color: $text;
+            border-color: $text;
+            -webkit-transition: 300ms; /* Safari */
+            -webkit-transition-timing-function: ease-in-out; /* Safari */
+          }
+        }
+      }
+    }
+    #avatar{
+      width: 100%;
+      display: flex;
+      img {
+        margin: auto;
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+        padding: 1%;
+        // border: dashed 5px  $text;
+      }
+    }
+  }
+}
+
+
