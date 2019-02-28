@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import TypeIt from 'typeit';
-export default class typewritter extends Component {
+import './styles.scss';
+export default class TypeWritter extends Component {
   state = {
     onAnimation: true
   }
@@ -9,16 +10,16 @@ export default class typewritter extends Component {
       speed: 50,
       waitUntilVisible: true
     })
-    .type("Hi? ")
-    .pause(500)
-    .delete(4)
     .type("Uhmm, Hello?")
-    .pause(500)
-    .delete(12)
-    .type("Ugh, okay okay ...")
-    .pause(600)
+    .pause(200)
+    .delete(50)
+    .type("Are you there?")
+    .pause(200)
+    .delete(50)
+    .type("Good. I'll introduce myself :)")
+    .pause(400)
     .delete(90)
-    .type("Hi, I'm <span id='highlight'>Aldrin Lim</span>. A Full Stack Developer from Philippines. Lets build you a beautiful website or a cool web application :)")
+    .type("Hi, I'm <span id='highlight'>Aldrin Lim</span>. A Software Developer based in Philippines. Let me build you a beautiful website or a cool web application")
     .exec(async () => {
       await new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -45,9 +46,8 @@ export default class typewritter extends Component {
       <div id="typewritter">
         <h1 className="type_intro active"></h1>
         <div className={`seemycv ${!this.state.onAnimation && "show"}`}>
-          <a href="#">View Resume</a>
+          <a href="https://drive.google.com/open?id=1WkALNv_wBGFQoVnjbRe8ky_h07-DKHRr" target="_blank">View Resume</a>
         </div>  
-        
       </div>
     )
   }

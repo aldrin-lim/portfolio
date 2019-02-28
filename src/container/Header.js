@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Typewritter from './Typewritter';
+// import Typewritter from './Typewritter';
 import avatar from '../assets/avatar.png';
 import Nav from './Nav';
 export default class Header extends Component {
@@ -11,7 +11,7 @@ export default class Header extends Component {
           {/* <div id="avatar">
             <img src={avatar} alt="me" />
           </div> */}
-          <Typewritter />
+          {/* <Typewritter /> */}
           
         </div>
       </div>

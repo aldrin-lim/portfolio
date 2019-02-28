@@ -1,0 +1,57 @@
+
+@import '../../assets/colors.scss';
+.nav {
+  
+  a {
+    color: $text;
+  }
+  #hamburger {
+    padding: 1em;
+    a > i {
+      @media (min-width:320px)  { 
+        /* smartphones, iPhone, portrait 480x320 phones */ 
+        font-size: 2em;
+      }
+    }
+  }
+  #menu {
+    z-index: 10;
+    width: 100%;
+    // background-color: rgba(200,200,200, .2);
+    // display: none;
+    transition: margin .3s ease-in-out;
+    position: relative;
+    @media (min-width:320px)  { 
+      /* smartphones, iPhone, portrait 480x320 phones */ 
+      height: 90vh;
+      position: absolute;
+      top: 4em;
+      background-color: $main;
+    }
+    &.show {
+      // display: block;
+      margin-left: 0
+    }
+    &.hide {
+      // display: block;
+      margin-left: -100%;
+    }
+    
+    .menu-box {
+      width: 100%;
+      position: absolute;
+      top: 15%;
+      a {
+        width: 100%;
+        text-align: center;
+        
+        display: inline-block;
+        @media (min-width:320px)  { 
+          /* smartphones, iPhone, portrait 480x320 phones */ 
+          padding: 5% 30px;
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+}

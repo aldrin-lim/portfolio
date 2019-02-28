@@ -9,9 +9,9 @@ export default class Nav extends Component {
           <img  src={Logo} alt="logo" />
         </div>
         <div id="menu">
-          <a href="#">Projects<i className="ml-1 fa fa-briefcase"/></a>
-          <a href="#">Skills<i className="ml-1 fa fa-keyboard"/></a>
-          <a href="#">Contact<i className="ml-1 fa fa-envelope"/></a>
+          <a href="#">Projects</a>
+          <a href="#">Skills</a>
+          <a href="#">Contact</a>
         </div>
       </div>
     )
