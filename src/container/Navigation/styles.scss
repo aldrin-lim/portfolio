@@ -1,9 +1,38 @@
 
 @import '../../assets/colors.scss';
 .nav {
-  
+  display: flex;
   a {
     color: $text;
+  }
+  #logo {
+    width: 70px;
+    margin: .2em .5em;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    @media (max-width:320px) {
+      
+    }
+    @media (max-width:320px) and (min-width:320px)  { 
+      /* smartphones, iPhone, portrait 480x320 phones */ 
+      width: 70px;
+      margin: .2em .5em;
+    }
+    @media (min-width:769px)  {
+       /* tablet, landscape iPad, lo-res laptops ands desktops */
+      width: 90px;
+      margin: 1em; 
+    }
+    @media (min-width:1024px)  {
+      /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+      width: 100px;
+      margin: 1.5em;
+    }
+    @media (min-width:1281px) {
+      /* hi-res laptops and desktops */ 
+    }
   }
   #hamburger {
     padding: 1em;
@@ -13,6 +42,12 @@
         font-size: 2em;
       }
     }
+    @media (min-width:769px)  {
+      display: none;
+    }
+    margin-left: auto;
+    order: 2;
+    margin-top: 1em;
   }
   #menu {
     z-index: 10;
@@ -21,12 +56,22 @@
     // display: none;
     transition: margin .3s ease-in-out;
     position: relative;
-    @media (min-width:320px)  { 
+    @media (max-width:768px)  {
       /* smartphones, iPhone, portrait 480x320 phones */ 
       height: 90vh;
       position: absolute;
-      top: 4em;
+      top: 5em;
       background-color: $main;
+    }
+    @media (min-width: 769px){
+      order: 2;
+      margin-left: auto;
+      width: 60%;
+      top: 2.5em;
+    }
+    @media (min-width: 1025px){
+      width: 40%;
+      top: 3em;
     }
     &.show {
       // display: block;
@@ -34,19 +79,30 @@
     }
     &.hide {
       // display: block;
-      margin-left: -100%;
+      @media (max-width:768px)  {
+        margin-left: -100%;
+      }
+      
     }
-    
     .menu-box {
       width: 100%;
-      position: absolute;
-      top: 15%;
+      @media (max-width:768px)  {
+        position: absolute;
+        top: 15%;
+      }
+      @media (min-width: 769px) {
+        display: flex;
+        a {
+          flex: 1;
+          font-size: 1em;
+        }
+      }
       a {
         width: 100%;
         text-align: center;
         
         display: inline-block;
-        @media (min-width:320px)  { 
+        @media (max-width:768px)  { 
           /* smartphones, iPhone, portrait 480x320 phones */ 
           padding: 5% 30px;
           font-size: 1.5em;

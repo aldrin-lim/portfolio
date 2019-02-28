@@ -9,6 +9,25 @@
   text-align-last: center;
   font-weight: bold;
   font-family: 'Anton', sans-serif;
+  h1 {
+    @media (max-width:320px) and (min-width:641px)  { 
+      /* smartphones, iPhone, portrait 480x320 phones */ 
+      font-size: 1em;
+    }
+    @media (min-width:641px)  {
+       /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+       font-size: 3em;
+    }
+    @media (min-width:1024px)  {
+      /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+      width: 80%;
+      margin: 5% auto;
+    }
+    @media (min-width:1281px) {
+      /* hi-res laptops and desktops */ 
+      font-size: 4em;
+    }
+  }
   .seemycv {
     text-align: center;
     width: 100%;
@@ -19,10 +38,15 @@
       opacity: 1;
     }
     a {
-      @media (min-width:320px)  { 
+      @media (min-width:320px) and (min-width:641px)  { 
         /* smartphones, iPhone, portrait 480x320 phones */ 
         width: 80%;
       }
+      @media (min-width:641px)  {
+         /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+         width: 20%;
+      }
+      
       display: inline-block;
       border-radius: 1em;
       // background-color: $hightlight;
@@ -43,10 +67,7 @@
       }
     }
   }
-  @media (min-width:320px)  { 
-    /* smartphones, iPhone, portrait 480x320 phones */ 
-    font-size: 1em;
-  }
+  
 }
 
 @media (min-width:320px)  { 

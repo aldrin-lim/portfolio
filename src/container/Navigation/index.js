@@ -8,9 +8,9 @@ export default class Nav extends Component {
   render() {
     return (
       <div className="nav">
-        {/* <div id="logo">
+        <div id="logo">
           <img  src={Logo} alt="logo" />
-        </div> */}
+        </div>
         <div id="hamburger">
           <a className="anchor" href="#" onClick={() => this.setState({ toggle: !this.state.toggle })}><i className={`fa ${this.state.toggle ? 'fa-times' : 'fa-bars'}`} /></a>
         </div>
